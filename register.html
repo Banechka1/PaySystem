@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        body {
+            background-color: #ffccff;
+            color: #330033;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #ff99ff;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+        button {
+            background-color: #ff66ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Регистрация</h2>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Имя пользователя" required>
+            <br><br>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <br><br>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <p>Уже есть аккаунт? <a href="{{ url_for('login') }}">Войти</a></p>
+    </div>
+</body>
+</html>
