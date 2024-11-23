@@ -1,0 +1,10 @@
+Flask==2.3.3
+sqlite3
+redis==4.0.2
+os
+hashlib
+random
+time
+logging
+kafka-python==2.0.2
+json
